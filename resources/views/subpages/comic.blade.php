@@ -39,11 +39,12 @@ $iconMain = [
     
             </div>
         
-            <div class="current-menu-flag">
-                CURRENT SERIES
-            </div>
-
             <div id="content" class="container">
+                
+                <div class="current-menu-flag">
+                    CURRENT SERIES
+                </div>    
+
                 @foreach ($data as $key => $comic)
                     <div class="single-comic">
                         <div>

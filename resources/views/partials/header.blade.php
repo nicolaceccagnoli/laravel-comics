@@ -41,8 +41,7 @@
         [
             'url' => '/shop',
             'label' => 'SHOP',
-        ],
-
+        ]
     ];
 
 @endphp
