@@ -45,40 +45,50 @@
 @endphp
 
 <footer>
-    <div class="footer-top container">
-        <div class="row g-0 p-0">
-            <div class="col-4 d-flex flex-wrap">
-    
-                @foreach ($footerData as $key => $singleData)
-                        <ul>
-                            <li class="list-title">
-                                {{ $key }}
-                            </li>
-    
-                            @foreach ($singleData as $data)
-                                <li>{{ $data }}</li>
-                            @endforeach
-                        </ul>
-                @endforeach
-    
+    <div class="footer-top">
+
+        <div class="container">
+            <div class="row g-0 p-0">
+                <div class="col-4 d-flex flex-wrap justify-content-between">
+        
+                    @foreach ($footerData as $key => $singleData)
+                            <ul>
+                                <li class="list-title">
+                                    {{ $key }}
+                                </li>
+        
+                                @foreach ($singleData as $data)
+                                    <li>{{ $data }}</li>
+                                @endforeach
+                            </ul>
+                    @endforeach
+        
+                </div>
+                <div class="col-6 offset-2 dc-logo">
+                    <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="dc-logo">
+                </div>    
             </div>
-            <div class="col-6 offset-2 dc-logo">
-                <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="dc-logo">
-            </div>    
         </div>
+
     </div>
-    <div class="footer-bottom container">
-        <div class="row g-0 p-0 justify-content-between">
-            <div class="col-auto">
-                <a href="#nogo">
-                    sign up now
-                </a>
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <div class="row g-0 p-0 justify-content-between">
+                <div class="col-auto">
+                    <a href="#nogo">
+                        sign up now
+                    </a>
+                </div>
+                <div class="col-auto">
+                    @foreach ($socialFooter as $singleSocial)
+                        <img src="{{ Vite::asset( 'resources/img/'.$singleSocial) }}" alt="{{ $singleSocial }}">
+                    @endforeach
+                </div>
             </div>
-            <div class="col-auto">
-                @foreach ($socialFooter as $singleSocial)
-                    <img src="{{ Vite::asset( 'resources/img/'.$singleSocial) }}" alt="{{ $singleSocial }}">
-                @endforeach
-            </div>
+
         </div>
+
     </div>
 </footer>

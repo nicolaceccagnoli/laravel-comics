@@ -1,10 +1,36 @@
+@php 
+
+$iconMain = [
+    [
+        'path' => 'buy-comics-digital-comics.png',
+        'name' => 'DIGITAL COMICS'
+    ],
+    [
+        'path' => 'buy-comics-merchandise.png',
+        'name' => 'DC MERCHANDISE'
+    ],
+    [
+        'path' => 'buy-comics-shop-locator.png',
+        'name' => 'SUBSCRIPTION'
+    ],
+    [
+        'path' => 'buy-comics-subscriptions.png',
+        'name' => 'COMIC SHOP LOCATOR'
+    ],
+    [
+        'path' => 'buy-dc-power-visa.svg',
+        'name' => 'DC POWER VISA'
+    ]
+];
+
+@endphp
+
+
 @extends('layouts.app')
 
 @section('page-title', 'Comics')
 
 @section('main-content')
-
-
 
     <main>
         <section id="big-comic-container">
@@ -17,7 +43,7 @@
                 CURRENT SERIES
             </div>
 
-            <div id="content">
+            <div id="content" class="container">
                 @foreach ($data as $key => $comic)
                     <div class="single-comic">
                         <div>
@@ -38,14 +64,18 @@
 
         </section>
         <section id="shop">
+
             <ul>
-                {{-- <li v-for="(shop, i) in shopSection" :key="i">
-                    <div class="shop-icons">
-                        <img :src="shop.path" :alt="shop.name">
-                        <a href="#"> {{ shop.name }}</a>
-                    </div>
-                </li> --}}
+                @foreach ($iconMain as $key =>$icon)
+                        <li>
+                            <div class="shop-icons">
+                                <img src="{{ Vite::asset( 'resources/img/'.$icon['path']) }}" alt="{{ $icon['name'] }}">
+                                <a href="#">{{ $icon['name'] }}</a>
+                            </div>
+                        </li>
+                @endforeach
             </ul>
+
         </section>
         
     </main>

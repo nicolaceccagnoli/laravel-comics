@@ -81,26 +81,55 @@ main {
         width: calc((100% / 6) - 40px);
     }
 
-}
+    #shop {
 
-.gatto-img {
-    height: 200px;
-}
+        background-color: #0482F9;
 
-.gatto-bg {
-    height: 200px;
-    background-image: url('../img/gatto.webp');
-    background-size: contain;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 50px 50px;
+                margin-bottom: 0;
+
+                li {
+                    list-style: none;
+
+                    .shop-icons {
+
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 50px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            margin-left: 10px;
+                            font-size: 12px;
+                            font-size: smaller;
+                        }
+                        
+
+                    }
+
+                }
+            }
+
+    }
+
 }
 
 footer {
-    background-image: url('../img/footer-bg.jpg');
-    background-size: cover;
 
     .footer-top {
 
-        ul {
+        background-image: url('../img/footer-bg.jpg');
+        background-size: cover;    
 
+        ul {
             list-style: none;
             padding: 0;
 
@@ -126,5 +155,9 @@ footer {
             overflow: hidden;
 
         }
+    }
+
+    .footer-bottom {
+        background-color: #303030;
     }
 }
