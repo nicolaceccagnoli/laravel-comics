@@ -9,7 +9,7 @@
             'label' => 'CHARACTERS',
         ],
         [
-            'url' => '/comics',
+            'url' => '/comic',
             'label' => 'COMICS',
         ],
         [

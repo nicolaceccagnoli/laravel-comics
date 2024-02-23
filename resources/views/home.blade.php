@@ -4,7 +4,7 @@
 
 @section('main-content')
 <h1>
-    Laravel Comics
+    DC
 </h1>
 
 {{-- <h2>
