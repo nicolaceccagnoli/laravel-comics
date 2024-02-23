@@ -43,36 +43,39 @@
             'label' => 'SHOP',
         ],
 
-
-
     ];
+
 @endphp
 
-<header class="container">
+<header>
     <div class="header-top">
-        <div class="row justify-content-end">
-            <div class="col-auto">
-                DC POWER VISA
-            </div>
-            <div class="col-auto">
-                ADDITIONAL DC SITES
+        <div class="container h-100">
+            <div class="row justify-content-end align-items-center h-100">
+                <div class="col-auto">
+                    DC POWER VISA <span>&reg</span>
+                </div>
+                <div class="col-auto">
+                    ADDITIONAL DC SITES <i class="fa-solid fa-caret-down"></i>
+                </div>
             </div>
         </div>
     </div>
     <div class="header-bottom">
-        <nav class="g-0 py-3 d-flex">
-            <ul class="d-flex justify-content-between list-unstyled flex-grow-1 h-100 align-items-center p-0">
-                @foreach ($links as $link)
-                    <li class="h-100">
-                        <a href="{{ $link['url'] }}" class="text-decoration-none">
-                            {{ $link['label'] }}
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-            <span class="d-inline">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </span>
-        </nav>
+        <div class="container h-100">
+            <nav class="py-3 d-flex align-items-center h-100">
+                <ul class="d-flex justify-content-between list-unstyled flex-grow-1 p-0">
+                    @foreach ($links as $link)
+                        <li>
+                            <a href="{{ $link['url'] }}" class="text-decoration-none">
+                                {{ $link['label'] }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+                <span>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </span>
+            </nav>
+        </div>
     </div>
 </header>

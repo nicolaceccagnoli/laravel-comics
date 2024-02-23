@@ -73,15 +73,16 @@
     </div>
     <div class="footer-bottom">
 
-        <div class="container">
+        <div class="container h-100">
 
-            <div class="row g-0 p-0 justify-content-between">
+            <div class="row g-0 p-0 justify-content-between align-items-center h-100">
                 <div class="col-auto">
-                    <a href="#nogo">
-                        sign up now
+                    <a href="#nogo" id="sign-up">
+                        SIGN UP NOW
                     </a>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-flex align-items-center">
+                    <span>FOLLOW US</span>
                     @foreach ($socialFooter as $singleSocial)
                         <img src="{{ Vite::asset( 'resources/img/'.$singleSocial) }}" alt="{{ $singleSocial }}">
                     @endforeach

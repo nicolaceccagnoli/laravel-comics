@@ -1,5 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
 
+header {
+    height: 120px;
+
+    .header-top {
+        background-color: #0482F9;
+        height: 30px;
+        color: white;
+    }
+
+    .header-bottom {
+        height: 90px;
+        a {
+            color: black;
+        }
+    }
+}
 
 main {
 
@@ -159,5 +175,24 @@ footer {
 
     .footer-bottom {
         background-color: #303030;
+
+        height: 80px;
+
+        #sign-up {
+            border: 2px solid #0482F9;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+        }
+
+        span {
+            color: #0482F9;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        img {
+            padding: 10px;
+        }
     }
 }
