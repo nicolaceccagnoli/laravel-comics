@@ -60,9 +60,9 @@
         </div>
     </div>
     <div class="header-bottom">
-        <div class="container h-100">
-            <nav class="py-3 d-flex align-items-center h-100">
-                <ul class="d-flex justify-content-between list-unstyled flex-grow-1 p-0">
+        <div class="container">
+            <nav class="py-3 d-flex align-items-center">
+                <ul class="d-flex m-0 justify-content-between list-unstyled flex-grow-1 p-0">
                     @foreach ($links as $link)
                         <li>
                             <a href="{{ $link['url'] }}" class="text-decoration-none">
@@ -72,7 +72,7 @@
                     @endforeach
                 </ul>
                 <span>
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="border-0 text-end" type="search" placeholder="Search" aria-label="Search">
                 </span>
             </nav>
         </div>
