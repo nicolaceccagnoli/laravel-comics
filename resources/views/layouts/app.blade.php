@@ -21,6 +21,8 @@
 
         @include('partials.header')
 
+        @include('partials.jumbotron')
+
         <main>
             <div class="container">
 
