@@ -48,8 +48,8 @@
     ];
 @endphp
 
-<header>
-    <div class="header-top container">
+<header class="container">
+    <div class="header-top">
         <div class="row justify-content-end">
             <div class="col-auto">
                 DC POWER VISA
@@ -60,8 +60,8 @@
         </div>
     </div>
     <div class="header-bottom">
-        <nav class="container g-0 py-3 d-flex">
-            <ul class="d-flex justify-content-around list-unstyled flex-grow-1 h-100 align-items-center">
+        <nav class="g-0 py-3 d-flex">
+            <ul class="d-flex justify-content-between list-unstyled flex-grow-1 h-100 align-items-center p-0">
                 @foreach ($links as $link)
                     <li class="h-100">
                         <a href="{{ $link['url'] }}" class="text-decoration-none">

@@ -13,3 +13,39 @@ main {
     background-image: url('../img/gatto.webp');
     background-size: contain;
 }
+
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+
+    .footer-top {
+
+        ul {
+
+            list-style: none;
+            padding: 0;
+
+            .list-title {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 12px;
+            }
+
+            li {
+                color: #a6a6a6;
+                font-size: 14px;
+                font-weight: lighter;
+            }
+        }
+        
+        .dc-logo {
+
+            height: 400px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+        }
+    }
+}
